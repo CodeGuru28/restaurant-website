@@ -7,6 +7,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 :root{
     --bg-color1: #FFF0E9;
     --bg-color2: #FCFBFC;
@@ -25,7 +29,10 @@ li{
 }
 
 header{
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
     width: 100vw;
     overflow: hidden;
     background-color: var(--bg-color1);
@@ -82,6 +89,10 @@ nav{
     font-weight: 500;
 }
 
+#login:hover{
+    text-decoration: underline;
+}
+
 #signup{
     color: var(--red-heading);
     font-size: 1.2rem;
@@ -89,8 +100,27 @@ nav{
     padding: 0.5rem 1.2rem;
     border-radius: 2rem;
     border: 2px solid var(--red-heading);
+    transition: all 0.3s ease-in;
+}
+
+#signup:hover{
+    background-color: var(--red-heading);
+    color: var(--bg-color2);
+}
+
+.bar{
+    font-size: 1.5rem;
+    color: var(--red-heading);
+    cursor: pointer;
+    display: none;
 }
 
 #home{
     background-color: var(--bg-color1);
+    height: 100vh;
+}
+
+#about{
+    background-color: var(--bg-color2);
+    height: 100vh;
 }

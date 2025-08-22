@@ -1,0 +1,59 @@
+@media (max-width: 1024px) {
+    .logo{
+        font-size: 1.6rem;
+    }
+    .menu{
+        gap: 1rem;
+    }
+    .link{
+        font-size: 1rem;
+    }
+    .btns{
+        /* display: none; */
+    }
+}
+
+@media (max-width: 768px) {
+    .logo{
+        font-size: 1.4rem;
+    }
+    .menu{
+        gap: 0.8rem;
+    }
+    .link{
+        font-size: 0.9rem;
+    }
+    .btns{
+        display: none;
+    }
+    .menu{
+        position: fixed;
+        top: 0;
+        /* left: 0px; */
+        height: 80vh;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: var(--bg-color1);
+        transform: translateX(100%);
+        transition: all 0.3s ease-in;
+    }
+    
+    .menu.active-menu{
+        left: 0;
+        transform: translateX(0);
+    }
+
+    .bar{
+        display: block;
+    }
+
+body.menu-open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+}
