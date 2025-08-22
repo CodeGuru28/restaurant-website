@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wdth,wght@75..100,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --bg-color1: #FFF0E9;
+    --bg-color2: #FCFBFC;
+    --yellow: #FECC64;
+    --red-heading:#EA5858;
+    --gray: #928B89;
+    --black: #3D3C3E;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+header{
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+    background-color: var(--bg-color1);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.menu{
+    display: flex;
+    gap: 2.8rem;
+}
+
+.link{
+    padding: 0.4rem 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--gray);
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in;
+}
+
+.link:hover{
+    background-color: var(--red-heading);
+    color: var(--bg-color2);
+}
+
+.link.active{
+    background-color: var(--red-heading);
+    color: var(--bg-color2);
+}
+
+.btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+#login{
+    color: var(--red-heading);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#signup{
+    color: var(--red-heading);
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.5rem 1.2rem;
+    border-radius: 2rem;
+    border: 2px solid var(--red-heading);
+}
+
+#home{
+    background-color: var(--bg-color1);
+}
