@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wdth,wght@75..100,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wdth,wght@75..100,100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', 'Roboto', sans-serif;
 }
 
 html{
@@ -36,6 +35,7 @@ header{
     width: 100vw;
     overflow: hidden;
     background-color: var(--bg-color1);
+    height: 4.5rem;
 }
 
 nav{
@@ -117,10 +117,127 @@ nav{
 
 #home{
     background-color: var(--bg-color1);
-    height: 100vh;
+    margin-top: 4.5rem;
+    height: calc(100vh - 4.5rem);
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#about{
-    background-color: var(--bg-color2);
-    height: 100vh;
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.left h1{
+    font-size: 4.5rem;
+    color: var(--red-heading);
+    display: flex;
+    flex-direction: column;
+}
+
+.emphasize{
+    text-decoration: wavy underline var(--yellow);
+    transition: all 0.3s ease-in;
+}
+
+.emphasize:hover{
+    text-decoration: wavy underline var(--red-heading);
+    color: var(--yellow);
+}
+
+.desc-parent{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.desc{
+    font-size: 1.2rem;
+    color: var(--gray);
+    width: 50%;
+}
+
+.avatar{
+    width: 3rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.btns-hero{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 2rem;
+}
+
+.buy-now{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 2rem;
+    background-color: var(--red-heading);
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: all 0.3s ease-in;
+}
+
+.buy-now .icon-cont i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    color: var(--black);
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
+
+.buy-now:hover{
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
+.play{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem 1.5rem;
+    color: var(--black);
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: all 0.3s ease-in;
+}
+
+.play i{
+    font-size: 1.8rem;
+    font-weight: bolder;
+    padding: 1.2rem;
+    border-radius: 50%;
+    background-color: #fff;
+    color: rgb(234, 174, 184);
+    transition: all 0.3s ease-in;
+    border: 4px solid var(--red-heading);
+}
+
+.play i:hover{
+    border-radius: 30%;
+    color: var(--black);
+    font-size: 1rem;
+    padding: 0.8rem;
+}
+
+.play span:hover{
+    text-decoration: underline;
+}
+
+.hero-img{
+    width: 35rem;
 }

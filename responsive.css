@@ -8,12 +8,52 @@
     .link{
         font-size: 1rem;
     }
-    .btns{
-        /* display: none; */
+
+    .hero-img{
+        width: 22rem;
+    }
+
+    .home .left h1{
+        font-size: 2.9rem;
+    }
+
+    .home .left{
+        gap: 1rem;
+    }
+
+    .desc-parent{
+        gap: 0.6rem;
+    }
+    .desc{
+        font-size: 0.9rem;
+    }
+    .avatar{
+        width: 2rem;
+    }
+    .btns-hero{
+        margin-top: 1rem;
+        gap: 0.2rem;
+    }
+    .buy-now{
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+    .play{
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+    .play i{
+        padding: 0.6rem;
+        font-size: 0.9rem;
     }
 }
 
 @media (max-width: 768px) {
+
+    nav{
+        padding: 1rem;
+    }
+    
     .logo{
         font-size: 1.4rem;
     }
@@ -50,10 +90,110 @@
         display: block;
     }
 
-body.menu-open {
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
-  height: 100%;
+    body.menu-open {
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+    }
+    .home{
+        padding: 0 1rem !important;
+    }
+    .home .left{
+        gap: 2rem;
+    }
+    .hero-img{
+        width: 15rem;
+    }
+    .home .left h1{
+        font-size: 2.4rem;
+    }
+    .desc{
+        font-size: 0.9rem;
+        width: 90%;
+    }
+    .avatar{
+        width: 2rem;
+    }
+    .btns-hero{
+        margin-top: 1rem;
+        gap: 0.2rem;
+    }
+    .buy-now{
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+    .play{
+        padding: 0.6rem 1rem;
+    }
 }
+
+@media (max-width: 435px) {
+    .home{
+        flex-direction: column-reverse;
+        justify-content: start !important;
+        gap: 2rem;
+    }
+    .home .left h1{
+        font-size: 2.2rem;
+    }
+    .hero-img{
+        width: 10rem;
+    }
+    .desc-parent{
+        gap: 0.6rem;
+    }
+    .desc{
+        font-size: 0.8rem;
+        width: 70%;
+    }
+    .avatar{
+        width: 1.8rem;
+    }
+    .btns-hero{
+        margin-top: 1rem;
+        gap: 0.2rem;
+    }
+    .buy-now{
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+    .play{
+        padding: 0.6rem 1rem;
+    }
+}
+
+@media (max-width: 380px){
+    .home .left h1{
+        font-size: 1.8rem;
+    }
+    .desc{
+        font-size: 0.7rem;
+        width: 70%;
+    }
+    .btns-hero{
+        margin-top: 0rem;
+        gap: 1rem;
+        flex-direction: column-reverse;
+        align-items: start;
+    }
+    .buy-now{
+        padding: 0.6rem 1rem;
+        font-size: 1.2rem;
+        width: 80%;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+    }
+    .play{
+        padding: 0.6rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .buy-now i{
+        padding: 0.2rem !important;
+        font-size: 1.2rem !important;
+    }
 }
