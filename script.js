@@ -1,3 +1,9 @@
+// const scroll = new LocomotiveScroll({
+//     el: document.querySelector('#main'),
+//     smooth: true
+// });
+
+
 const navLinks = document.querySelectorAll('.link');
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
@@ -52,11 +58,11 @@ const createCursorFollower = () => {
       duration: 0.7,
       ease: 'power4', // More easing options here: https://gsap.com/docs/v3/Eases/
       opacity: isTargetLinkOrBtn ? 0.6 : 1,
-      transform: `scale(${isTargetLinkOrBtn ? 3 : 1})`,
+      transform: `translate(-50%, -50%) scale(${isTargetLinkOrBtn ? 3 : 1})`,
     });
   });
  
-  // Hidding the cursor element when the mouse cursor
+  // Hiding the cursor element when the mouse cursor
   // is moved out of the page
   document.addEventListener('mouseleave', (e) => {
     gsap.to($el, {

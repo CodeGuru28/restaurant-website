@@ -41,7 +41,6 @@ li{
     pointer-events: none;
     left: 0;
     top: 0;
-    transform: translate(-50%, -50%);
     transition: transform 0.1s ease-out;
 }
 
@@ -358,4 +357,171 @@ nav{
 
 .card:hover .card-right h4{
     color: var(--red-heading);
+}
+
+#services{
+    background-color: var(--bg-color2);
+    padding-inline: 3rem;
+    padding-top: 4rem;
+}
+
+.image-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.service-img{
+    width: 20rem;
+    aspect-ratio: 1;
+}
+
+.service-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.8rem;
+    transition: all 0.3s ease-in;
+    padding: 2rem 4rem;
+    border-radius: 2rem;
+}
+
+.service-card .service-desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.service-desc h5{
+    font-size: 1.65rem;
+    color: var(--black);
+    font-weight: 600;
+    transition: all 0.3s ease-in;
+    font-weight: 700;
+}
+
+.service-desc a{
+    font-size: 1.2rem;
+    color: var(--red-heading);
+    font-weight: 500;
+    transition: all 0.3s ease-in;
+}
+
+.service-desc a:hover{
+    text-decoration: underline;
+}
+
+.service-card:hover {
+    transform: scale(1.1);
+    background-color: var(--bg-color1);
+}
+
+#services .parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 3rem;
+}
+
+.heading{
+    font-size: 3.5rem;
+    color: var(--black);
+    font-weight: 600;
+    transition: all 0.3s ease-in;
+    font-weight: 800;
+    line-height: 3.5rem;
+}
+
+.color{
+    color: var(--red-heading);
+}
+
+.parent .heading{
+    width: 30%;
+}
+
+.parent p{
+    transition: all 0.3s ease-in;
+    width: 28%;
+}
+
+footer{
+    margin-top: 5rem;
+    background-color: var(--bg-color1);
+    padding: 3rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+footer h2, .two h3{
+    font-size: 2.8rem;
+    color: var(--red-heading);
+    font-weight: 600;
+    transition: all 0.3s ease-in;
+    margin-bottom: 0.6rem;
+}
+
+footer h2:hover{
+    text-decoration: wavy underline var(--red-heading);
+    color: var(--yellow);
+}
+
+footer p{
+    font-size: 1.1rem;
+    color: var(--gray);
+}
+
+.footer-links{
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-links a{
+    font-size: 1.8rem;
+    color: var(--gray);
+    transition: all 0.3s ease-in;
+}
+
+.footer-links a:hover{
+    color: var(--black);
+}
+
+.footer ul{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.footer ul li a{
+    font-size: 1rem;
+    color: var(--gray);
+    transition: all 0.3s ease-in;
+}
+
+.footer ul li a:hover{
+    color: var(--black);
+}
+
+.footer h3{
+    font-size: 2rem;
+    color: var(--red-heading);
+    font-weight: 600;
+    transition: all 0.3s ease-in;
+}
+
+body{
+    background-color: var(--bg-color2);
 }
